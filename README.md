@@ -19,4 +19,12 @@ Run [Lumina desktop](https://lumina-desktop.org/) in docker.
 
 Look at `x11docker --help` for further options.
 
+# Extend base image
+To add your desired applications, create your own Dockerfile with this image as a base. Example:
+```
+FROM x11docker/lumina
+RUN xbps-install -Suy midori
+```
+
+# Screenshot
 ![screenshot](https://raw.githubusercontent.com/mviereck/x11docker/screenshots/screenshot-lumina.png "lumina desktop running in a Xephyr window using x11docker")
