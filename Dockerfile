@@ -19,6 +19,7 @@
 FROM voidlinux/voidlinux
 
 RUN xbps-install -Suy lumina dbus liberation-fonts-ttf xterm \
-         mesa-ati-dri mesa-intel-dri mesa-nouveau-dri
+         mesa-ati-dri mesa-intel-dri mesa-nouveau-dri kmod
 
 CMD start-lumina-desktop
+
